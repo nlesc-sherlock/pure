@@ -60,7 +60,7 @@
     ; =>
     (emit (normalize 'PUNCT lexeme)
           (delay (tokenizer input-port)))]
-   [any-char
+   [(:+ any-char)
     ; =>
     (emit (normalize 'MISC lexeme)
           (delay (tokenizer input-port)))]
